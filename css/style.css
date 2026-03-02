@@ -1,5 +1,6 @@
 :root {
   --color-white: #FFFFFF;
+  --color-body-background: #FAFAFA;
   --color-grey-400: #6A7178;
   --color-grey-500: #4D4F62;
   --color-red: #EA5454;
@@ -48,6 +49,7 @@
 body {
   font-family: 'Poppins Regular', sans-serif;
   font-size: 0.94rem;
+  background-color: var(--color-body-background);
 }
 
 .visually-hidden {
@@ -70,6 +72,7 @@ body {
 
 .features {
   width: clamp(314px, 80%, 1114px);
+  margin-top: 3.5rem;
 }
 
 .features__intro {
@@ -84,7 +87,6 @@ body {
   font-size: 1.5rem;
   line-height: 1.4;
   letter-spacing: 0.25px;
-  margin-top: 3.5rem;
   margin-bottom: 1rem;
 }
 
@@ -98,5 +100,54 @@ body {
 }
 
 .features__list {
+  display: grid;
+  gap: 2rem;
   list-style: none;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-bottom: 2.93rem;
+  border-radius: 8px;
+  border-top-width: 5px;
+  border-top-style: solid;
+  box-shadow: 0px 15px 30px -11px rgba(130.85, 166.19, 210.28, 0.50);
+
+  &:nth-child(1) {
+    border-top-color: var(--color-cyan);
+  }
+
+  &:nth-child(2) {
+    border-top-color: var(--color-red);
+  }
+
+  &:nth-child(3) {
+    border-top-color: var(--color-orange);
+  }
+
+  &:nth-child(4) {
+    border-top-color: var(--color-blue);
+  }
+}
+
+.features__title {
+  font-family: 'Poppins Semi Bold';
+  font-size: 1.25rem;
+  line-height: 1.35;
+  color: var(--color-grey-500);
+  margin-bottom: 0.37rem;
+}
+
+.features__description {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  letter-spacing: 0.09px;
+  color: var(--color-grey-400);
+}
+
+.features__icon {
+  align-self: flex-end;
+  margin-top: 2rem;
 }
