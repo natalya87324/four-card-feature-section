@@ -52,7 +52,7 @@ Focus more on implementing fluid typography. I'm still not comfortable with usin
 
 ### Useful resources
 
-- [Demo on Container queries](https://htmlacademy.ru/demos/191#1) - This is a good deme which helped me better understand container queries. I'd recommend it to anyone still learning this concept although it's in Russian.
+- [Demo on Container queries](https://htmlacademy.ru/demos/191#1) - This is a good demo which helped me better understand container queries. I'd recommend it to anyone still learning this concept although it's in Russian.
 
 
 ## Author
